@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 * {
     margin: 0;
@@ -10,6 +11,7 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+/* NAVIGATION */
 header {
     position: fixed;
     height: 100px;
@@ -20,6 +22,7 @@ header {
     text-transform: uppercase;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
     overflow: hidden;
 }
 
@@ -33,6 +36,10 @@ header {
     font-weight: bold;
     font-size: 18px;
     color: #555;
+}
+
+.logo .name::after {
+    content: "treehouse";
 }
 
 .image {
@@ -53,7 +60,7 @@ header {
 nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-right: 20%;
+    smargin-right: 20%;
 }
 
 nav a {
@@ -66,4 +73,66 @@ nav a {
 
 nav a:hover {
     color: #222;
+}
+
+/* TITLE SECTION */
+
+.titleSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    height: 530px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)), url(img/desk.jpg) no-repeat center left;
+    background-size: cover;
+}
+
+h1 {
+    margin-top: 120px;
+    width: 535px;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    color: #fff;
+}
+
+h2 {
+    margin-top: 41px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    color: #ccc;
+}
+
+.titleSection button {
+    margin-top: 55px;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    border-width: 0px;
+    background-color: #7cc576;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.titleSection button:hover {
+    background-color: #fff;
+}
+
+button span {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    color: #ffffff;
+    filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.7));
+
+}
+
+button:hover span {
+    color: #222222;
 }
