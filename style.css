@@ -60,7 +60,7 @@ header {
 nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    smargin-right: 20%;
+    margin-right: 20%;
 }
 
 nav a {
